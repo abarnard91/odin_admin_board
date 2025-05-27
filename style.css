@@ -1,0 +1,146 @@
+.roboto{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*{
+    /*border: 1px solid red;*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    display:grid;
+    grid-template: 150px 3fr/275px 4fr;
+}
+
+.sidebar{
+    background-color: #1b96d3;
+    color: white;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+}
+
+.icon{
+    width: 15%;
+    height: 15%;
+    fill: white;
+}
+
+.header{
+    display: grid;
+    grid-template: 50% 50% / 70% 30%;
+    padding-left: 5%;
+    /*border-right: 0px;*/
+    box-shadow: -2px 2px 2px grey;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.magnifying_glass_icon{
+    height: 80%;
+    width: auto;
+    fill:black; 
+}
+
+#search_bar{
+    background-color: #e3ebf2;
+    width: 80%;
+    height: 30%;
+    border-radius: 5px;
+}
+.search-bar > button{
+    width: 10%;
+    height: 50%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.search-bar > button:active{
+    box-shadow: 4px 4px 4px gainsboro inset;
+    transform:translateY(2px);
+    background-color: #e3ebf2;
+}
+.profile_name_alert{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    padding-right: 10%;
+
+}
+.bell_icon{
+    width: auto;
+    height: 50%;
+    padding-left: 20%;
+}
+.profile_img{
+    height: 60%;
+    max-width: auto;
+    background-color: rgb(62, 62, 182);
+    border-radius: 50%;
+    padding: 5px;
+}
+.welcome-box{
+    display:flex;
+    padding-left: 2%;
+}
+
+.welcome-box > img{
+    height:80%;
+    width: auto;
+    padding:5px;
+    background-color: rgb(62, 62, 182);
+    border-radius: 50%;
+}
+
+.welcome-box div{
+    padding-left: 1%;
+    font-weight: 800;
+    width: 80%
+}
+.welcome-box > div{
+    font-size: 12px;
+}
+.welcome-box div ~ div{
+    font-size: 26px;
+}
+
+.action_buttons{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+}
+.action_buttons button{
+    /*min-width: 20px;
+    max-width: 22%;*/
+    min-width: 100px;
+    max-width: 22%;
+    height: 50%;
+    font-weight: 800;
+    font-size: 1vw;
+    color: white;
+    background-color: #1b96d3;
+    border-radius: 20px;
+    border: none;
+}
+
+.link_buttons{
+    width: 2%;
+    height: 2%;
+    display: flex;
+    
+}
+
